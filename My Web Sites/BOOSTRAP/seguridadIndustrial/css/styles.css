@@ -10550,3 +10550,25 @@ section#contact form#contactForm :-ms-input-placeholder {
   align-self: center;
   margin: 0 auto;
 }
+.linkW {
+  text-decoration: none;
+  color: white;
+}
+#sendMessageButton:hover {
+  background-color: blue;
+}
+.bloqueLogo {
+  
+  align-self: center;
+  margin-top: 50px;
+}
+.icono {
+  width: 50px;
+}
+.imagenLogo {
+  height: 60px !important;
+  width: auto;
+}
+#mainNav {
+  height: 100px;
+}
