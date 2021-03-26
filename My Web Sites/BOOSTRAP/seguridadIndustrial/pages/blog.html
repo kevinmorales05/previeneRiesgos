@@ -20,7 +20,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="../index.html"><img src="../assets/img/logos/logo_02.png" alt="" width="150" height="120"/></a>
+                <a class="navbar-brand js-scroll-trigger" href="../index.html"><img src="../assets/img/logos/logoBlanco.png" class="imagenLogo" alt="" width="150" height="120"/></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ml-1"></i>
@@ -41,24 +41,28 @@
                 <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contact">Contacto</a>
             </div>
         </header>
-        <!-- Services-->
+        <!-- Blog input-->
         <section class="page-section" id="services">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">¿Por qué es importante la Seguridad Ocupacional?</h2>
-                    <h3 class="section-subheading text-muted">La seguridad ocupacional es clave para el mejoramiento de tu empresa</h3>
+                    <h3 class="section-subheading text-muted">La seguridad ocupacional es clave para el mejoramiento de
+                         tu empresa</h3>
                     
                 </div>
-                <div class="row text-center">
-                    <div class="col-md-12">
+                <div class="row text-center" style="align-content: center;">
+                    <div class="col-md-12 " style="text-align: justify;">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-microfone fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">La Base Legal de la Seguridad Ocupacional en el Ecuador</h4>
-                        <p class="text-muted">Toda organización debe contar con un Sistema de Gestión de Seguridad y Salud 
-                            Ocupacional, que le permita controlar los riesgos a los que está expuesto su personal, con el 
-                            fin de mejorar su desempeño.
+                        <h4 class="my-3">SISTEMAS DE GESTIÓN EN SEGURIDAD Y SALUD EN EL TRABAJO</h4>
+                        <p class="text-muted">En la actualidad en Ecuador hemos pasado por alto que debemos implementar un Sistema de Gestión en Seguridad y
+                            Salud Ocupacional, parte de esto es la elaboración del Reglamento de higiene y seguridad cuando 
+                            en nuestra nómina consten más 
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                                Leer más
+                            </a>
                         </p>
                         <ul class="quote">
                             <li>
@@ -73,6 +77,82 @@
                 </div>
             </div>
         </section>
+
+        
+<!--CONTACTO-->
+
+        <section class="page-section" id="contact">
+            <div class="container">
+              <div class="text-center">
+                <h2 class="section-heading text-uppercase " style="color: black;">Envíanos un Correo</h2>
+                <h3 class="section-subheading text-muted">
+                  Envíanos un correo y cuéntanos cuál es tu necesidad, te contactamos lo más pronto posible.
+                </h3>
+              </div>
+              <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                <div class="row align-items-stretch mb-5">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        class="form-control"
+                        id="name"
+                        type="text"
+                        placeholder="Su Nombre *"
+                        required="required"
+                        data-validation-required-message="Por favor escribe tu nombre."
+                      />
+                      <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group">
+                      <input
+                        class="form-control"
+                        id="email"
+                        type="email"
+                        placeholder="Su correo *"
+                        required="required"
+                        data-validation-required-message="Por favor escriba su correo."
+                      />
+                      <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group mb-md-0">
+                      <input
+                        class="form-control"
+                        id="phone"
+                        type="tel"
+                        placeholder="Su teléfono*"
+                        required="required"
+                        data-validation-required-message="Por favor escriba su número telefónico"
+                      />
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group form-group-textarea mb-md-0">
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        placeholder="Su mensaje *"
+                        required="required"
+                        data-validation-required-message="Por favor escriba su mensaje"
+                      ></textarea>
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <div id="success"></div>
+                  <button
+                    class="btn btn-primary btn-xl text-uppercase"
+                    id="sendMessageButton"
+                    type="submit"
+                  >
+                    Enviar mensaje                                   
+                  </button>
+                </div>
+              </form>
+            </div>
+          </section>
+
         
         
         
@@ -81,260 +161,99 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-4 text-lg-left">Copyright © PrevieneRiesgos 2021</div>
-                   
+
                     <div class="col-lg-4 my-3 my-lg-0">
                         <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/Previene-Riesgos-Seguridad-Industrial-y-Prevenci%C3%B3n-de-Riesgos-103477331806504"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/invites/contact/?i=i8kjacrqjjca&utm_content=lb66d8z"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://wa.me/message/HLKMCLKSY4AVB1"><i class="fab fa-whatsapp"></i></a>
                     </div>
                     <div class="col-lg-4 text-lg-right">Creada por <a href="https://i-code.tech/" target='_blank' >i-code Tech</a></div>
                 </div>
+                <div class="row align-items-center" style="margin-top: 20px; background-color: black; color: white;">
+
+                    <div class="col-lg-4 text-lg-center">
+                        <p><b>Teléfono:</b> </br> +593 962886666</p>
+
+                    </div>
+
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <p><b>Dirección: </br> </b>Santo Domingo 1220, Santiago, Región Metropolitana, Chile</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-center">
+                        <p><b>e-mail: </br> </b> info@previeneriesgos.com</p>
+                    </div>
+
+                   
+                    
+                    
+                </div>
             </div>
         </footer>
-        <!-- Portfolio Modals-->
-        <!-- Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Gestión del Sistema de Seguridad y Salud Ocupacional</h2>
-                                    <p class="item-intro text-muted">Auditoría Profesional</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sistemaFull.png" alt="" />
-                                    <p>Iniciamos con una Auditoria con el propósito de determinar el alcance de cumplimiento del Sistema de Seguridad 
-                                        y Salud Ocupacional de nuestros clientes, definiendo el proceso adecuado para la Implementación del Sistema de Gestión.</p>
-                                   
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Cerrar pestaña
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        
+
+
+
+<!-- Modal 2-->
+<div
+class="portfolio-modal modal fade"
+id="portfolioModal2"
+tabindex="-1"
+role="dialog"
+aria-hidden="true"
+>
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <img src="../assets/img/close-icon.svg" alt="Close modal" />
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="modal-body">
+            <!-- Project Details Go Here-->
+            <h2 class="text-uppercase">SISTEMAS DE GESTIÓN EN SEGURIDAD Y SALUD EN EL TRABAJO</h2>
+            
+            <ul class="quote">
+              <li>
+                 <b>Por</b> Edgar Santiago Orquera Cañadas
+              </li>
+              <li>
+                  3/marzo/2021
+              </li>
+          </ul>
+            <img
+              class="img-fluid d-block mx-auto"
+              src="../assets/img/portfolio/organizacionFull.png"
+              alt=""
+            />
+            <p style="text-align: justify;">
+                En la actualidad en Ecuador hemos pasado por alto que debemos implementar un Sistema de Gestión en Seguridad y
+                 Salud Ocupacional, parte de esto es la elaboración del Reglamento de higiene y seguridad cuando 
+                 en nuestra nómina consten más de 10 trabajadores; cito: “Art. 434.- Reglamento de higiene y seguridad.- En todo medio colectivo y permanente de trabajo que cuente con más de diez trabajadores, los empleadores están obligados a elaborar y someter a la aprobación del Ministerio de Trabajo y Empleo por medio de la Dirección Regional del Trabajo, un reglamento de higiene y seguridad, el mismo que será renovado cada dos años”.
+            </br></br>La Implementación del Sistema de Gestión estará a cargo de un profesional en Seguridad e higiene laboral, bajo la responsabilidad del Representante Legal de las instituciones, entidades, organismos y empresas del sector público y privado, así como de las organizaciones de la economía popular y solidaria.
+        </br></br> De acuerdo a la normativa legal vigente en todo lugar de trabajo debemos tomar medidas tendientes a disminuir los riesgos laborales, estas medidas las debemos basar en directrices que se enmarquen dentro de los parámetros establecidos de un Sistema de Gestión de Seguridad y Salud en el trabajo, esto de acuerdo a la Decisión 584 “Instrumento Andino de Seguridad y Salud en el Trabajo” al cual Ecuador se encuentra como país miembro.
+    </br></br>En resumen podemos mencionar que toda empresa privada o pública que tenga más de 10 trabajadores; debe implementar y mantener un Sistema de Seguridad y Salud Ocupacional, el cual debe estar dirigido por un profesional técnico especializado y con experiencia en Sistemas de Gestión en Seguridad Industrial y Salud Ocupacional.
+
+
+            </p>
+            
+            <button
+              class="btn btn-primary"
+              data-dismiss="modal"
+              type="button"
+            >
+              <i class="fas fa-times mr-1"></i>
+              Cerrar
+            </button>
+          </div>
         </div>
-        <!-- Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Organización de la Estructura de Seguridad y Salud Ocupacional</h2>
-                                    <p class="item-intro text-muted">Organizamos tu empresa</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/organizacionFull.png" alt="" />
-                                    <p>De acuerdo con la normativa legal vigente del país, elaboramos el Reglamento Interno de Seguridad y Salud de los trabajadores,
-                                         Procedimientos, Programas y demás documentos necesarios; así como el Planteamiento de la Política Empresarial y 
-                                         la Conformación de los Organismos Paritarios.</p>
-                                    
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Cerrar Pestaña
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Planes de Emergencia</h2>
-                                    <p class="item-intro text-muted">Elaboramos tu plan</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/planEmergenciaFull.png" alt="" />
-                                    <p>  Elaboramos la estructura del Plan de Emergencia de acuerdo con la necesidad de cada uno de nuestros 
-                                        clientes, en base a los requisitos establecidos por el Cuerpo de Bomberos y demás Entes de Control, con el fin de minimizar al
-                                         máximo los incidentes que puedan ocasionarse.</p>
-                                    
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Cerrar Pestaña
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Matrices de Riesgos Laborales</h2>
-                                    <p class="item-intro text-muted">Evaluamos el Riesgo</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/matrizFull.png" alt="" />
-                                    <p>Identificamos, evaluamos, valoramos y gestionamos los riesgos que existan en cada una de 
-                                        las Empresas de nuestros clientes, en base a la Metodologías aprobadas por los Entes de Control.</p>
-                                    
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Cerrar Pestaña
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Programas, Procedimientos y Formatos de Seguridad y Salud Ocupacional</h2>
-                                    <p class="item-intro text-muted">Diseñamos tu programa</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/programaFull.png" alt="" />
-                                    <p>Diseñamos programas internos de Prevención de Riesgos, los cuales son adaptados a las necesidades reales del cliente y de esta manera aportamos con la reducción de incidentes, accidentes laborales y enfermedades profesionales.</p>
-                                    
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Cerrar Pestaña
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Capacitaciones, Charlas e Inducciones:</h2>
-                                    <p class="item-intro text-muted">Construimos el programa anual</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/capacitacionFull.png" alt="" />
-                                    <p> Construimos el Programa anual de Capacitación, en base a las necesidades de cada uno 
-                                        de nuestros clientes. Impartiendo las mismas de acuerdo con las condiciones legales con personal calificado y certificado por 
-                                        los Entes de Control.</p>
-                                    
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Cerrar Pestaña
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 7-->
-        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Simulacros</h2>
-                                    <p class="item-intro text-muted">Organizamos simulacros</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/simulacrosFull.png" alt="" />
-                                    <p>Con el apoyo de nuestros clientes, realizamos Simulacros de Respuesta ante Emergencias que puedan presentarse; con el fin de poner en práctica los conocimientos adquiridos durante las capacitaciones realizadas.</p>
-                                    
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Cerrar Pestaña
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 8-->
-        <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Dirección de Operaciones</h2>
-                                    <p class="item-intro text-muted">Aumentamos la rentabilidad</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/operacionesFull.png" alt="" />
-                                    <p>Organizamos y gestionamos los recursos que dispone cada uno de nuestros clientes sean estos de producción o servicios, con el propósito de mejorar la rentabilidad en sus empresas.</p>
-                                    
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Cerrar pestaña
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 9-->
-        <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Gestión de Riesgos</h2>
-                                    <p class="item-intro text-muted">Identificamos los riesgos potenciales</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/gestionFull.png" alt="" />
-                                    <p>Identificamos las posibles amenazas sean estas de origen natural o antrópico (humano) de cada uno 
-                                        de nuestros clientes, con el objetivo de establecer estrategias idóneas para el manejo adecuado y de esta manera evitar 
-                                        un impacto negativo en sus organizaciones.</p>
-                                    
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Cerrar pestañas
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>

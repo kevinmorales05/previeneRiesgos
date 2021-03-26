@@ -10146,11 +10146,13 @@ header.masthead1 {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/industry2.png");
+  background-image: url("../assets/img/industry2.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+  background-size: block;
+  
 }
 header.masthead1 .masthead-subheading {
   font-size: 1.5rem;
@@ -10447,7 +10449,7 @@ header.masthead1 .masthead-heading {
 }
 .team-member img {
   width: 14rem;
-  height: 14rem;
+  height: 17rem;
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
 }
 .team-member h4 {
@@ -10569,6 +10571,4 @@ section#contact form#contactForm :-ms-input-placeholder {
   height: 60px !important;
   width: auto;
 }
-#mainNav {
-  height: 100px;
-}
+
